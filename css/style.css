@@ -1,0 +1,1090 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #111;
+    color: white;
+}
+
+/* NAVIGATION */
+nav {
+    width: 100%;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    border: 3px solid #d7ff2f;
+    color: #d7ff2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #d7ff2f;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: white;
+}
+
+/* HERO SECTION */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/home.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 53%;
+    left: 6%;
+    transform: translateY(-50%);
+    max-width: 650px;
+}
+
+.title {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.feat {
+    font-family: 'Anton', sans-serif;
+    font-size: 200px;
+    font-weight: 900;
+    color: white;
+    font-style: italic;
+    line-height: 0.85;
+    letter-spacing: -7px;
+    text-shadow: 10px 10px 0 rgba(255,255,255,0.15);
+}
+
+.side-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.ness {
+    font-family: 'Anton', sans-serif;
+    font-size: 95px;
+    font-weight: 900;
+    color: #d7ff2f;
+    font-style: italic;
+    margin-left: 30px;
+    margin-top: -15px;
+    line-height: 0.9;
+}
+
+.lab {
+    font-family: 'Anton', sans-serif;
+    font-size: 115px;
+    font-weight: 900;
+    color: #d7ff2f;
+    font-style: italic;
+    margin-left: 5px;
+    margin-top: -5px;
+    line-height: 0.8;
+}
+
+.content h3 {
+    color: #d7ff2f;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.content h2 {
+    margin-top: 10px;
+    font-size: 30px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.content p {
+    margin-top: 20px;
+    color: #d7ff2f;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+/* ABOUT PAGE */
+.hero-about-banner {
+    text-align: center;
+    padding: 90px 20px 80px 20px;
+    background-color: #1a1a1a;
+    border-bottom: 3px solid #ffffff;
+}
+
+.hero-about-banner h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 80px;
+    letter-spacing: 3px;
+    line-height: 1;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.hero-about-banner h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 80px;
+    letter-spacing: 3px;
+    color: #d7ff2f;
+    font-style: italic;
+}
+
+.hero-about-banner p {
+    color: #d7ff2f;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.about-asymmetric-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.about-panel {
+    padding: 90px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 480px;
+}
+
+.about-panel.lime-content {
+    background-color: #d7ff2f;
+    color: #000000;
+}
+
+.about-panel.dark-content {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.panel-wrapper {
+    width: 100%;
+    max-width: 520px;
+}
+
+.about-panel h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 45px;
+    font-style: italic;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-panel.dark-content h2 {
+    color: #d7ff2f;
+}
+
+.about-panel p {
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.about-checklist {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.about-checklist li {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.about-checklist li::before {
+    content: "✓";
+    font-weight: 900;
+}
+
+.about-panel-media {
+    width: 100%;
+    min-height: 480px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-parallax-block {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-bottom: 3px solid #ffffff;
+}
+
+.parallax-overlay {
+    padding: 110px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75));
+}
+
+.parallax-overlay h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 55px;
+    font-style: italic;
+    color: #d7ff2f;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.parallax-overlay p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #ffffff;
+}
+
+/* WORKOUT PAGE */
+.workout-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.page-title {
+    font-size: 3.8rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-top: -240px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+    text-transform: uppercase;
+}
+
+.workout-split {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 420px;
+    height: 520px;
+    perspective: 1500px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.flip-card-front {
+    background-color: rgba(25, 25, 25, 0.6);
+    border: 2px solid #222222;
+}
+
+.gain-title, .lose-title {
+    color: #ccff00;
+    font-size: 2.2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.hover-hint {
+    color: #555555;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.flip-card-back {
+    background-color: #1a1a1a;
+    color: white;
+    border: 2px solid #ccff00;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h2 {
+    color: #ccff00;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+.flip-card-back p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #cccccc;
+    margin-bottom: 30px;
+}
+
+.workout-img-box {
+    width: 320px;
+    height: 280px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.gain-img {
+    background-image: url('../images/gain.png');
+    background-position: 40% center;
+}
+
+.lose-img {
+    background-image: url('../images/lose.png');
+    background-position: 45% center;
+}
+
+.divider-line {
+    width: 3px;
+    height: 350px;
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+
+.start-btn {
+    display: inline-block;
+    background-color: #00cc66;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 65px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 10px rgba(0, 204, 102, 0.3);
+    transition: all 0.2s ease;
+}
+
+.start-btn:hover {
+    transform: scale(1.05);
+    background-color: #00ff7f;
+    box-shadow: 0px 6px 15px rgba(0, 204, 102, 0.5);
+}
+
+/* WORKOUT LEVELS PAGE */
+.hero-gain-levels, .hero-lose-levels {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)), url('../images/home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.level-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 100px 0 60px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.subtitle-badge {
+    position: absolute;
+    top: 100px;
+    right: 6%;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.level-split {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+    width: 85%;
+}
+
+.level-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.level-card:hover {
+    transform: translateY(-50px);
+}
+
+.level-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    letter-spacing: 1.5px;
+}
+
+.level-title.beginner { color: #00b050; }
+.level-title.intermediate { color: #ffc000; }
+.level-title.advanced { color: #ff0000; }
+
+.char-box {
+    width: 380px;
+    height: 380px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 40px;
+    animation: floatingChar 3s ease-in-out infinite;
+}
+
+.intermediate-char { animation-delay: 0.5s; }
+.advanced-char { animation-delay: 1s; }
+
+@keyframes floatingChar {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+.lvl-start-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #00b050;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 10px 45px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.lvl-start-btn:hover {
+    background-color: #ccff00;
+    color: #000000;
+    box-shadow: 0 0 20px rgba(204, 255, 0, 0.7);
+}
+
+.lvl-divider {
+    width: 2px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* NUTRITION PAGE */
+.hero-banner {
+    text-align: center;
+    padding: 45px 20px 40px 20px;
+    background-color: #222222;
+}
+
+.hero-banner h1 {
+    font-size: 80px;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.hero-banner p {
+    color: #d4ff3b;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.split-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.panel-lime-content {
+    background-color: #d4ff3b;
+    color: #000000;
+    padding: 90px 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.panel-lime-content h2 {
+    font-size: 38px;
+    line-height: 1.25;
+    font-weight: 900;
+}
+
+.panel-media-frame {
+    width: 100%;
+    aspect-ratio: 1 / 0.9;
+    overflow: hidden;
+}
+
+.panel-media-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.macro-container-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+}
+
+.macro-box {
+    background-color: #222222;
+    padding: 55px 40px;
+    text-align: center;
+    border-right: 3px solid #ffffff;
+}
+
+.macro-box:last-child {
+    border-right: none;
+}
+
+.macro-box h3 {
+    font-size: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.macro-box p {
+    color: #d4ff3b;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.macro-visual-frame {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.macro-visual-frame img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.habits-promo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    border-bottom: 3px solid #ffffff;
+}
+
+.healthy-habits-panel {
+    background-color: #d7ff2f;
+    color: #000000;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.healthy-habits-panel h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 45px;
+    font-style: italic;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.habits-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.habits-checklist li {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.habits-checklist li::before {
+    content: "✓";
+    margin-right: 15px;
+    font-weight: 900;
+    color: #000000;
+    font-size: 26px;
+}
+
+.promo-image-side {
+    background-color: #111111;
+    overflow: hidden;
+    display: flex;
+}
+
+.promo-image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 400px;
+}
+
+.nutri-reminder-bar {
+    text-align: center;
+    padding: 55px 20px;
+    background-color: #111111;
+    border-bottom: 3px solid #ffffff;
+}
+
+.nutri-reminder-bar h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.nutri-reminder-bar p {
+    color: #d7ff2f;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hub-title-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #222222;
+    border-bottom: 3px solid #ffffff;
+}
+
+.hub-title-section h2 {
+    font-size: 55px;
+    letter-spacing: 1px;
+}
+
+.hub-display-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 3px solid #ffffff;
+}
+
+.hub-block {
+    background-color: #222222;
+    padding: 60px 40px;
+    text-align: center;
+    border-right: 3px solid #ffffff;
+}
+
+.hub-block:last-child {
+    border-right: none;
+}
+
+.hub-block h3 {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hub-image-frame {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    display: block;
+}
+
+.hub-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hub-description {
+    font-size: 1.1rem;
+    color: #cccccc;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+/* MEAL PAGES */
+.hero-meals {
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+    background-color: #222222;
+    border-bottom: 3px solid #ffffff;
+}
+
+.hero-meals h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.hero-meals p {
+    color: #d4ff3b;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.meal-plan-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 40px 0 30px 0;
+    color: #ffffff;
+    border-left: 5px solid #d4ff3b;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.meals-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    margin-bottom: 60px;
+}
+
+.meal-card {
+    background-color: #222222;
+    border-radius: 20px;
+    padding: 45px 30px 35px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 320px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.meal-card:hover {
+    transform: scale(1.02);
+    border-color: rgba(212, 255, 59, 0.3);
+}
+
+.meal-badge {
+    background-color: #d4ff3b;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 35px;
+    font-size: 16px;
+    border-radius: 5px;
+    position: absolute;
+    top: -18px;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 12px rgba(212, 255, 59, 0.3);
+}
+
+.food-illustrations {
+    width: 100%;
+    height: 180px;
+    margin-top: 15px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
+
+.tips-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #222222;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+}
+
+.tips-section h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.tips-section p {
+    color: #d4ff3b;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* LIFESTYLE PAGE */
+.hero-lifestyle {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background-color: #222222;
+    border-bottom: 3px solid #ffffff;
+}
+
+.hero-lifestyle h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.hero-lifestyle p {
+    color: #d7ff2f;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.lifestyle-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.lifestyle-text-block {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+
+.lifestyle-content {
+    max-width: 450px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.lifestyle-text-block h2 {
+    font-size: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.lifestyle-text-block ul {
+    list-style: none;
+}
+
+.lifestyle-text-block ul li {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.lifestyle-text-block ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
+
+.lifestyle-text-block.lime-bg {
+    background-color: #d7ff2f;
+    color: #000000;
+}
+
+.lifestyle-text-block.dark-bg {
+    background-color: #222222;
+    color: #d7ff2f;
+}
+
+.lifestyle-image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 350px;
+}
+
+.motivation-section {
+    background-color: #1a1a1a;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.motivation-border {
+    border: 4px solid #7f00ff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.motivation-border h2 {
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.motivation-border p {
+    color: #d7ff2f;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* FOOTER */
+.footer {
+    background: #2f2f2f;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 80px 100px;
+}
+
+.footer-box {
+    width: 300px;
+}
+
+.footer-box h2 {
+    color: #d7ff2f;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 15px;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: #d7ff2f;
+}
+
+.footer-box p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .about-asymmetric-container,
+    .split-row,
+    .habits-promo-container,
+    .hub-display-grid,
+    .meals-grid,
+    .lifestyle-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .workout-split,
+    .level-split {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .divider-line,
+    .lvl-divider {
+        display: none;
+    }
+}
